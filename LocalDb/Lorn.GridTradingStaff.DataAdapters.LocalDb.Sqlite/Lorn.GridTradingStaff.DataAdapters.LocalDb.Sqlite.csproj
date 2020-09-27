@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Lorn.GridTradingStaff.DataAdapters.LocalDb.Design\Migrations\20200927090954_SecurityData.cs" Link="Migrations\20200927090954_SecurityData.cs" />
+    <Compile Include="..\Lorn.GridTradingStaff.DataAdapters.LocalDb.Design\Migrations\20200927090954_SecurityData.Designer.cs" Link="Migrations\20200927090954_SecurityData.Designer.cs" />
+    <Compile Include="..\Lorn.GridTradingStaff.DataAdapters.LocalDb.Design\Migrations\SqliteDataContextModelSnapshot.cs" Link="Migrations\SqliteDataContextModelSnapshot.cs" />
+    <Compile Include="..\Lorn.GridTradingStaff.DataAdapters.LocalDb.Design\SqliteDataContext.cs" Link="SqliteDataContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="System.Composition" Version="1.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lorn.GridTradingStaff.DataAdapters.LocalDb\Lorn.GridTradingStaff.DataAdapters.LocalDb.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
